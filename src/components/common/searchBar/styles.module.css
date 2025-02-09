@@ -1,0 +1,23 @@
+.serach_bar{
+    background-color: #333334;
+    border-radius: 20px ;
+    padding-left: 10px;
+
+}
+.inuptField{
+    background-color: inherit;
+    height: 40px;
+    width: 212px;
+    padding: 7px 8px 9px;
+    border-radius: 0 20px 20px 0  ;
+    border : none;
+    outline: none;
+
+}
+.inuptField::placeholder{
+    color: #A4A7AB;
+}
+
+.serach_bar_icon{
+    border-radius: 20px 0 0 20px;
+}

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    padding: 5px 12px;
+    gap: 10px;
+}
+.container:hover{
+    background-color: #33333491;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.image{
+    background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/yw/r/-GSeaf19sqF.png);
+    background-size: auto;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.titleStyle{
+    margin: 0;
+    font-size: 14px;
+}
+img{
+    width: 36px;
+    height: 36px;
+}

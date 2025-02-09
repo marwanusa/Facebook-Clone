@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    gap: 1rem;
+    min-height: calc(100vh - 96px);
+}
+
+.leftSide{
+    flex-basis: 25%;
+    border: red solid 3px;
+}
+
+.mainContent{
+    flex: 1;
+    border: red solid 3px;
+}
+.rightSide{
+    flex-basis: 25%;
+    border: red solid 3px;
+}

@@ -1,0 +1,51 @@
+.customNavbar {
+    background-color: #242526 !important;
+  }
+
+.facebookLogo {
+    color: #E4E6EB;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.NavIcon{
+  width: 100px;
+}
+
+.active {
+  color: #1877f2 !important; 
+  /* border-bottom: 1px solid #1877f2;
+  height: 108%; */
+}
+
+.mega-menu {
+  width: 800px;
+  background: #242526;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #b0b3b8;
+}
+
+.shortcut-item {
+  background: transparent;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.shortcut-item:hover {
+  background: #3a3b3c;
+  color: #1877f2;
+}
