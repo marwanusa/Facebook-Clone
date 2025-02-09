@@ -1,9 +1,10 @@
+import DownArrowIcon from "../../../assets/Down_Arrow.svg?react"
 import { Button, Collapse } from 'react-bootstrap';
 import Group from '../../social/group/Group';
 import styles from './styles.module.css';
 import { useState } from 'react';
 const Sidebar = () => {
-    const { container,upSide,downSide,showMoreBtn } = styles;
+    const { container,upSide,downSide,showMoreBtn,seeMoreArrow } = styles;
     const [open, setOpen] = useState(false);
 
   return (
@@ -26,6 +27,9 @@ const Sidebar = () => {
         click
       </Button> */}
       <div className={showMoreBtn} onClick={() => setOpen(!open)}>
+        <div className={seeMoreArrow}>
+          <DownArrowIcon/>
+        </div>
         <p>See More</p>
       </div>
       <Collapse in={open}>
