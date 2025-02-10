@@ -1,20 +1,37 @@
+.container{
+    height: calc(100vh - 105px);
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
 .upSide{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border-bottom: 1px solid #65686C;
+
 }
 
-.showMoreBtn{
+.showBtn{
     padding: 5px 12px;
     display: flex;
     align-items: center;   
-    gap: 10px 
+    gap: 10px ;
+    cursor: pointer;
+    margin-bottom: 8px;
 }
 
-.showMoreBtn p{
-    margin: 0;
+.showBtn:hover{
+    background-color: #33333491;
+    border-radius: 8px;
+    transition: 0.3s;
 }
-.seeMoreArrow{
+
+.showBtn h6{
+    margin: 0;
+    font-size: 14px;
+}
+.seeArrow{
     background-color: #333334;
     border-radius: 50%;
     width: 36px;
@@ -23,3 +40,38 @@
     justify-content: center;
     align-items: center;
 }
+
+.downSide{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.downSide span{
+    padding: 5px 12px;
+    font-size: 18px;
+    color: #A4A7AB;
+    font-weight: 500;
+}
+
+
+.container::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+
+.container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    transition:  0.3s;
+}
+
+.container:hover::-webkit-scrollbar-thumb {
+    background: #888888b0;
+}
+
+

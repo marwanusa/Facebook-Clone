@@ -8,6 +8,8 @@
     background-color: #33333491;
     border-radius: 8px;
     cursor: pointer;
+    transition: 0.3s;
+
 
 }
 
