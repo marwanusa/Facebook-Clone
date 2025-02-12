@@ -1,5 +1,5 @@
 .container{
-    height: calc(100vh - 105px);
+    height: calc(100vh - 75px);
     overflow: scroll;
     overflow-x: hidden;
 

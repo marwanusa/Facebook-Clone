@@ -1,7 +1,7 @@
 import DownArrowIcon from "../../../assets/Down_Arrow.svg?react";
 import UpArrowIcon from "../../../assets/Up_Arrow.svg?react";
-import { Collapse } from "react-bootstrap";
 import Group from "../../social/group/Group";
+import { Collapse } from "react-bootstrap";
 import styles from "./styles.module.css";
 import { useState } from "react";
 const Sidebar = () => {

@@ -1,0 +1,85 @@
+.container{
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+
+.container::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+
+.container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 10px;
+    transition:  0.3s;
+}
+
+.container:hover::-webkit-scrollbar-thumb {
+    background: #888888b0;
+}
+
+.container span{
+    padding: 5px 12px;
+    font-size: 18px;
+    color: #A4A7AB;
+    font-weight: 500;
+}
+
+.contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.options{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    
+}
+
+.options div { 
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+}
+
+.options div:hover{
+    background-color: #333334; 
+}
+
+.avatarImage img{
+    border-radius: 50%;
+}
+.avatarImage{
+    position: relative;
+    opacity: 0.4;
+}
+
+.groupChats{
+    border-top: 1px solid #333334;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+
+}
+
