@@ -9,11 +9,21 @@
     border: red solid 3px;
 }
 
-.mainContent{
-    flex: 1;
+.mainContent {
+    flex-basis: 43%;
     border: red solid 3px;
+    overflow: hidden; /* يمنع Swiper من التأثير على المساحة */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* يضمن بقاء المحتوى في المنتصف */
 }
 .rightSide{
     flex-basis: 25%;
     border: red solid 3px;
 }
+
+.flexOneSpace{
+    flex: 1;
+}
+
+

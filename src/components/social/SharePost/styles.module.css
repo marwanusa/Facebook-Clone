@@ -1,8 +1,7 @@
 .container{
-    width: 590px;
-    height: 123px;
     display: flex;
     flex-direction: column;
+    flex: 1;
     gap: 8px;
     background-color: #242526;
     border-radius: 10px;
@@ -50,9 +49,30 @@
 .expressions{
     border-top: 1px solid #333334;
     display: flex;
+    height: 100%;
 }
 
 .expression{
-    flex-basis: 33% !important;
+    padding: 10px 5px ;
+    flex-basis: 35% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 10px;
+}
 
+.expression:hover{
+    background-color: #4d4d4e91;
+}
+
+.expression span{
+    color: #B8BBBF;
+    font-weight: 500;
+}
+.expressionImage{
+    width: 25px;
+    height: 25px;
 }
