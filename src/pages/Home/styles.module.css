@@ -6,20 +6,17 @@
 
 .leftSide{
     flex-basis: 25%;
-    border: red solid 3px;
 }
 
 .mainContent {
     flex-basis: 43%;
-    border: red solid 3px;
-    overflow: hidden; /* يمنع Swiper من التأثير على المساحة */
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* يضمن بقاء المحتوى في المنتصف */
+    align-items: center; 
 }
 .rightSide{
     flex-basis: 25%;
-    border: red solid 3px;
 }
 
 .flexOneSpace{
