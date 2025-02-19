@@ -41,7 +41,7 @@
 } 
 
 .text h6{
-    width: 70%;
+    width: fit-content;
 }
 .text h6:hover{
     text-decoration: underline;

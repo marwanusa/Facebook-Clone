@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import styles from "./styles.module.css";
 import PublicIcon from "../../../assets/Public_Icon.svg?react";
 import ThreeDotsIcon from "../../../assets/ThreeDots_Icon.svg?react";
 import XIcon from "../../../assets/X_Icon.svg?react";
 import { useRef, useState } from "react";
 
-const Post = ({imgSrc,postText}) => {
+const Post = ({post}) => {
   const {
     container,
     profileinfo,
@@ -81,7 +82,7 @@ const Post = ({imgSrc,postText}) => {
         <div className={info}>
           <div className={profileinfo}>
             <img
-              src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp"
+              src={post.user.profile_picture}
               className="rounded-circle"
             />
             <div className={text}>
@@ -90,7 +91,7 @@ const Post = ({imgSrc,postText}) => {
                 onMouseEnter={showProfileSam}
                 onMouseLeave={hideProfileSam}
               >
-                John Doe
+                {post.user.name}
               </h6>
               <div>
                 <small
@@ -117,8 +118,9 @@ const Post = ({imgSrc,postText}) => {
           </div>
         </div>
         <div className={content}>
-          {postText && <p>{postText}</p>}
-          {imgSrc && <img src={imgSrc} className={postImg} />}
+          {post.content.text && <p>{post.content.text}</p>}
+          {post.content.media.type === "image" && <img src={content.media.url}/>}
+          {/* {post.content.media && } */}
         </div>
       </div>
       {state.tooltip.visible && (

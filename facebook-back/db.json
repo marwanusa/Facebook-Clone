@@ -1,231 +1,250 @@
 {
-    "posts": [
-      {
-        "id": "post_001",
-        "user": {
-          "id": "user_101",
-          "name": "Ahmed Samir",
-          "profile_picture": "https://example.com/profile1.jpg"
-        },
-        "content": {
-          "text": "A beautiful day at the beach! 🌊☀️",
-          "media": [
-            {
-              "type": "image",
-              "url": "https://example.com/beach1.jpg"
-            },
-            {
-              "type": "image",
-              "url": "https://example.com/beach2.jpg"
-            }
-          ]
-        },
-        "likes_count": 220,
-        "comments_count": 45,
-        "shares_count": 18,
-        "created_at": "2025-02-18T10:00:00Z",
-        "privacy": "public",
-        "comments": []
+  "posts": [
+    {
+      "id": "post_001",
+      "user": {
+        "id": "user_101",
+        "name": "Ahmed Samir",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
       },
-      {
-        "id": "post_002",
-        "user": {
-          "id": "user_102",
-          "name": "Mona Khaled",
-          "profile_picture": "https://example.com/profile2.jpg"
-        },
-        "content": {
-          "text": "Nothing beats a cup of coffee in the morning ☕❤️",
-          "media": []
-        },
-        "likes_count": 150,
-        "comments_count": 20,
-        "shares_count": 5,
-        "created_at": "2025-02-18T09:30:00Z",
-        "privacy": "friends",
-        "comments": []
+      "content": {
+        "text": "A beautiful day at the beach! 🌊☀️",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          },
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
       },
-      {
-        "id": "post_003",
-        "user": {
-          "id": "user_103",
-          "name": "John Doe",
-          "profile_picture": "https://example.com/profile3.jpg"
-        },
-        "content": {
-          "text": "Check out this amazing sunset! 🌅",
-          "media": [
-            {
-              "type": "image",
-              "url": "https://example.com/sunset.jpg"
-            }
-          ]
-        },
-        "likes_count": 180,
-        "comments_count": 32,
-        "shares_count": 12,
-        "created_at": "2025-02-17T19:45:00Z",
-        "privacy": "public",
-        "comments": []
+      "likes_count": 220,
+      "comments_count": 45,
+      "shares_count": 18,
+      "created_at": "2025-02-18T10:00:00Z",
+      "privacy": "public",
+      "comments": []
+    },
+    {
+      "id": "post_002",
+      "user": {
+        "id": "user_102",
+        "name": "Mona Khaled",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/8.webp"
       },
-      {
-        "id": "post_004",
-        "user": {
-          "id": "user_104",
-          "name": "Sara Ahmed",
-          "profile_picture": "https://example.com/profile4.jpg"
-        },
-        "content": {
-          "text": "Just finished my workout! Feeling great 💪🔥",
-          "media": []
-        },
-        "likes_count": 95,
-        "comments_count": 18,
-        "shares_count": 3,
-        "created_at": "2025-02-17T07:00:00Z",
-        "privacy": "friends",
-        "comments": []
+      "content": {
+        "text": "Nothing beats a cup of coffee in the morning ☕❤️",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
       },
-      {
-        "id": "post_005",
-        "user": {
-          "id": "user_105",
-          "name": "David Johnson",
-          "profile_picture": "https://example.com/profile5.jpg"
-        },
-        "content": {
-          "text": "Throwback to last summer! 🏕️🔥",
-          "media": [
-            {
-              "type": "image",
-              "url": "https://example.com/camping1.jpg"
-            },
-            {
-              "type": "image",
-              "url": "https://example.com/camping2.jpg"
-            },
-            {
-              "type": "image",
-              "url": "https://example.com/camping3.jpg"
-            }
-          ]
-        },
-        "likes_count": 210,
-        "comments_count": 40,
-        "shares_count": 15,
-        "created_at": "2025-02-16T14:20:00Z",
-        "privacy": "public",
-        "comments": []
+      "likes_count": 150,
+      "comments_count": 20,
+      "shares_count": 5,
+      "created_at": "2025-02-18T09:30:00Z",
+      "privacy": "friends",
+      "comments": []
+    },
+    {
+      "id": "post_003",
+      "user": {
+        "id": "user_103",
+        "name": "John Doe",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp"
       },
-      {
-        "id": "post_006",
-        "user": {
-          "id": "user_106",
-          "name": "Emily Clark",
-          "profile_picture": "https://example.com/profile6.jpg"
-        },
-        "content": {
-          "text": "Excited for my new project! Stay tuned 🚀",
-          "media": []
-        },
-        "likes_count": 130,
-        "comments_count": 22,
-        "shares_count": 7,
-        "created_at": "2025-02-15T11:10:00Z",
-        "privacy": "friends",
-        "comments": []
+      "content": {
+        "text": "Check out this amazing sunset! 🌅",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1505144808419-1957a94ca61e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
       },
-      {
-        "id": "post_007",
-        "user": {
-          "id": "user_107",
-          "name": "Omar Hassan",
-          "profile_picture": "https://example.com/profile7.jpg"
-        },
-        "content": {
-          "text": "This moment was unforgettable! 🎉",
-          "media": [
-            {
-              "type": "video",
-              "url": "https://example.com/party.mp4"
-            }
-          ]
-        },
-        "likes_count": 300,
-        "comments_count": 55,
-        "shares_count": 25,
-        "created_at": "2025-02-14T22:00:00Z",
-        "privacy": "public",
-        "comments": []
+      "likes_count": 180,
+      "comments_count": 32,
+      "shares_count": 12,
+      "created_at": "2025-02-17T19:45:00Z",
+      "privacy": "public",
+      "comments": []
+    },
+    {
+      "id": "post_004",
+      "user": {
+        "id": "user_104",
+        "name": "Sara Ahmed",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/6.webp"
       },
-      {
-        "id": "post_008",
-        "user": {
-          "id": "user_108",
-          "name": "Lina Williams",
-          "profile_picture": "https://example.com/profile8.jpg"
-        },
-        "content": {
-          "text": "Nature is the best therapy 🍃💚",
-          "media": [
-            {
-              "type": "image",
-              "url": "https://example.com/nature1.jpg"
-            },
-            {
-              "type": "image",
-              "url": "https://example.com/nature2.jpg"
-            }
-          ]
-        },
-        "likes_count": 175,
-        "comments_count": 28,
-        "shares_count": 9,
-        "created_at": "2025-02-14T16:30:00Z",
-        "privacy": "public",
-        "comments": []
+      "content": {
+        "text": "Just finished my workout! Feeling great 💪🔥",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
       },
-      {
-        "id": "post_009",
-        "user": {
-          "id": "user_109",
-          "name": "Mark Lee",
-          "profile_picture": "https://example.com/profile9.jpg"
-        },
-        "content": {
-          "text": "Some deep thoughts about life 🤔",
-          "media": []
-        },
-        "likes_count": 90,
-        "comments_count": 14,
-        "shares_count": 2,
-        "created_at": "2025-02-13T09:45:00Z",
-        "privacy": "friends",
-        "comments": []
+      "likes_count": 95,
+      "comments_count": 18,
+      "shares_count": 3,
+      "created_at": "2025-02-17T07:00:00Z",
+      "privacy": "friends",
+      "comments": []
+    },
+    {
+      "id": "post_005",
+      "user": {
+        "id": "user_105",
+        "name": "David Johnson",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/20.webp"
       },
-      {
-        "id": "post_010",
-        "user": {
-          "id": "user_110",
-          "name": "Sophia Martinez",
-          "profile_picture": "https://example.com/profile10.jpg"
-        },
-        "content": {
-          "text": "New painting completed! 🎨✨",
-          "media": [
-            {
-              "type": "image",
-              "url": "https://example.com/art.jpg"
-            }
-          ]
-        },
-        "likes_count": 250,
-        "comments_count": 60,
-        "shares_count": 20,
-        "created_at": "2025-02-12T18:15:00Z",
-        "privacy": "public",
-        "comments": []
-      }
-    ]
-  }
-  
+      "content": {
+        "text": "Throwback to last summer! 🏕️🔥",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          },
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          },
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1484960055659-a39d25adcb3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
+      },
+      "likes_count": 210,
+      "comments_count": 40,
+      "shares_count": 15,
+      "created_at": "2025-02-16T14:20:00Z",
+      "privacy": "public",
+      "comments": []
+    },
+    {
+      "id": "post_006",
+      "user": {
+        "id": "user_106",
+        "name": "Emily Clark",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/7.webp"
+      },
+      "content": {
+        "text": "Excited for my new project! Stay tuned 🚀",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
+      },
+      "likes_count": 130,
+      "comments_count": 22,
+      "shares_count": 7,
+      "created_at": "2025-02-15T11:10:00Z",
+      "privacy": "friends",
+      "comments": []
+    },
+    {
+      "id": "post_007",
+      "user": {
+        "id": "user_107",
+        "name": "Omar Hassan",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/9.webp"
+      },
+      "content": {
+        "text": "This moment was unforgettable! 🎉",
+        "media": [
+          {
+            "type": "video",
+            "url": "https://example.com/party.mp4"
+          }
+        ]
+      },
+      "likes_count": 300,
+      "comments_count": 55,
+      "shares_count": 25,
+      "created_at": "2025-02-14T22:00:00Z",
+      "privacy": "public",
+      "comments": []
+    },
+    {
+      "id": "post_008",
+      "user": {
+        "id": "user_108",
+        "name": "Lina Williams",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/12.webp"
+      },
+      "content": {
+        "text": "Nature is the best therapy 🍃💚",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          },
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
+      },
+      "likes_count": 175,
+      "comments_count": 28,
+      "shares_count": 9,
+      "created_at": "2025-02-14T16:30:00Z",
+      "privacy": "public",
+      "comments": []
+    },
+    {
+      "id": "post_009",
+      "user": {
+        "id": "user_109",
+        "name": "Mark Lee",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/16.webp"
+      },
+      "content": {
+        "text": "Some deep thoughts about life 🤔",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
+      },
+      "likes_count": 90,
+      "comments_count": 14,
+      "shares_count": 2,
+      "created_at": "2025-02-13T09:45:00Z",
+      "privacy": "friends",
+      "comments": []
+    },
+    {
+      "id": "post_010",
+      "user": {
+        "id": "user_110",
+        "name": "Sophia Martinez",
+        "profile_picture": "https://mdbcdn.b-cdn.net/img/new/avatars/19.webp"
+      },
+      "content": {
+        "text": "New painting completed! 🎨✨",
+        "media": [
+          {
+            "type": "image",
+            "url": "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          }
+        ]
+      },
+      "likes_count": 250,
+      "comments_count": 60,
+      "shares_count": 20,
+      "created_at": "2025-02-12T18:15:00Z",
+      "privacy": "public",
+      "comments": []
+    }
+  ]
+}
