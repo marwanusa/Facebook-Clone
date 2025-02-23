@@ -1,9 +1,9 @@
 {
   "name": "facebook-back",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "json-server db.json --port 5005",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -11,5 +11,8 @@
   "description": "",
   "dependencies": {
     "json-server": "^0.17.4"
+  },
+  "engines": {
+    "node": ">=14"
   }
 }

@@ -2,17 +2,15 @@
     display: flex;
     gap: 1rem;
     min-height: calc(100vh - 96px);
-    position: relative; /* Ensure the container is the reference for fixed children */
-}
-
+    position: relative; }
 .feed {
     flex-basis: 43%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 28%; /* Adjust based on the width of the sidebar */
-    margin-right: 25%; /* Adjust based on the width of the rightSidebar */
+    margin-left: 28%; 
+    margin-right: 25%; 
     margin-top: 66px;
 
 }
