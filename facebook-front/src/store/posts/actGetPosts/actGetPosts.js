@@ -6,7 +6,7 @@ const actGetPosts = createAsyncThunk(
     async (_,thunkAPI) => {
         const { rejectWithValue } = thunkAPI;
         try{
-            const response = await axios.get('http://localhost:5005/posts');
+            const response = await axios.get('https://facebook-clone-production-63aa.up.railway.app/posts');
             return response.data;
         }catch (error) {
             if (axios.isAxiosError(error)) {

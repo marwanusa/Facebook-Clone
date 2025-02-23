@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit"
 import actGetPosts from "./actGetPosts/actGetPosts"
 
 const initialState = {
-    records: null,
+    records: [],
     status: "idle",
     error: null
 } 
@@ -28,6 +28,5 @@ const postsSlice = createSlice({
     }
     })
 
-// export const { increment, decrement, incrementByAmount } = counterSlice.actions if there is reducers
 export {actGetPosts}
 export default postsSlice.reducer

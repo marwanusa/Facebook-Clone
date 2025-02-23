@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Post from "../../social/Post/Post";
 import SharePost from "../../social/SharePost/SharePost";
 import { actGetPosts } from "../../../store/posts/postsSlice";
+import PostSkeleton from "../../feedback/skeletons/postSkeleton";
 const TimelineView = () => {
     const {container} = styles;
     const posts = useSelector((state) => state.posts)
@@ -11,15 +12,20 @@ const TimelineView = () => {
     useEffect(()=>{
       dispatch(actGetPosts())
     },[])
-    
+  
   return (
     <div className={container}>
         <SharePost/>
-        {posts.records && posts.records.map((post)=>{
+        {posts.status === "pending" && [1, 2, 3].map((index) => <PostSkeleton key={index} />) }
+        
+        {
+        posts.records && posts.records.map((post)=>{
           return (
             <Post key={post.id} post={post} />
           )
-        })}
+        })
+      }
+
     </div>
   )
 }
