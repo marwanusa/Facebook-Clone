@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    gap: 1rem;
+    min-height: calc(100vh - 96px);
+    position: relative; /* Ensure the container is the reference for fixed children */
+}
+
+.feed {
+    flex-basis: 43%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 28%; /* Adjust based on the width of the sidebar */
+    margin-right: 25%; /* Adjust based on the width of the rightSidebar */
+    margin-top: 66px;
+
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 25%; 
+}
+
+.rigthSidebar {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 25%; 
+}
