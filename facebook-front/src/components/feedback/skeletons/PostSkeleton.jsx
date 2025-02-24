@@ -2,11 +2,11 @@ import ContentLoader from "react-content-loader"
 
 const PostSkeleton = (props) => (
   <ContentLoader 
-    speed={3}
+    speed={2}
     width={600}
     height={600}
     viewBox="0 0 600 600"
-      backgroundColor="#f5f5f5"
+      backgroundColor="#252728"
       foregroundColor="#dbdbdb"
     {...props}
   >
