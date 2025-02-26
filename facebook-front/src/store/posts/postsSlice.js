@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import actGetPosts from "./actGetPosts/actGetPosts";
+import { actToggleLike } from "./actToggleLike/actToggleLike";
 
 const initialState = {
     records: [],
@@ -29,6 +30,13 @@ const postsSlice = createSlice({
             } else {
                 state.records = [...state.records, ...action.payload];
                 state.page += 1; 
+            }
+        });
+        builder.addCase(actToggleLike.fulfilled, (state, action) => {
+            const { postId, isLiked } = action.payload;
+            const post = state.records.find((p) => p.id === postId);
+            if (post) {
+                post.likes_count += isLiked ? -1 : 1; 
             }
         });
     }

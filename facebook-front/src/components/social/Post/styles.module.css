@@ -149,11 +149,7 @@
     margin-bottom: 6px;
     position: relative;
 }
-.postActions .reactsBar{
-    position: absolute;
-    bottom: 30px;
-    left: 0px;
-}
+
 .postActions span{
     display: flex;
     flex-basis: 22% ;
@@ -181,14 +177,6 @@
 }
 
 
-.postActions .likeBtn{
-    background-position: 0  -798px;;
-}
-
-.postActions .activeLikeBtn{
-    background-position: 0 -735px;
-    filter:none ;
-}
 
 .postActions .commentBtn{
     background-position: 0px -588px;

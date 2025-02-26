@@ -4,7 +4,7 @@ import PublicIcon from "../../../assets/Public_Icon.svg?react";
 import ThreeDotsIcon from "../../../assets/ThreeDots_Icon.svg?react";
 import XIcon from "../../../assets/X_Icon.svg?react";
 import { useRef, useState } from "react";
-import { ReactionBarSelector } from "@charkour/react-reactions";
+import ReactsBar from "../reactsBar/ReactsBar";
 
 const Post = ({ post }) => {
   const {
@@ -27,9 +27,6 @@ const Post = ({ post }) => {
     shareBtn,
     sendBtn,
     commentBtn,
-    likeBtn,
-    activeLikeBtn,
-    reactsBar,
   } = styles;
 
   const tooltipTimeoutRef = useRef(null);
@@ -37,24 +34,7 @@ const Post = ({ post }) => {
     tooltip: { visible: false, text: "", x: 0, y: 0 },
     profileSam: { visible: false, x: 0, y: 0 },
   });
-  const [isLiked, setIsLiked] = useState(false);
-  const [showReactions, setShowReactions] = useState(false);
-  const [likesCount, setLikesCount] = useState(post.likes_count);
-  const setLike = () => {
-    isLiked ? setLikesCount(likesCount - 1) : setLikesCount(likesCount + 1);
-    setIsLiked(!isLiked);
-  };
-  let reactionTimeout;
 
-  const hideReactionsbar = () => {
-    clearTimeout(reactionTimeout);
-    reactionTimeout = setTimeout(() => setShowReactions(false), 1000);
-  };
-
-  const showReactionsbar = () => {
-    clearTimeout(reactionTimeout);
-    reactionTimeout = setTimeout(() => setShowReactions(true), 500);
-  };
   const showTooltip = (event, text) => {
     clearTimeout(tooltipTimeoutRef.current);
     const rect = event.target.getBoundingClientRect();
@@ -77,19 +57,7 @@ const Post = ({ post }) => {
       }));
     }, 200);
   };
-  const [selectedReaction, setSelectedReaction] = useState(null);
-  const handleReactionClick = (key) => {
-    setLike();
-    setSelectedReaction(key === "satisfiction" ? "like" : key); // تخزين الإيموجي المختار
-  };
-  const reactions = [
-    { key: "satisfaction", node: <div>👍</div> },
-    { key: "love", node: <div>❤️</div> },
-    { key: "happy", node: <div>😆</div> },
-    { key: "surprise", node: <div>😮</div> },
-    { key: "sad", node: <div>😢</div> },
-    { key: "angry", node: <div>😡</div> },
-  ];
+
 
   return (
     <>
@@ -140,7 +108,7 @@ const Post = ({ post }) => {
                 alt=""
               />
             </div>
-            <p>{likesCount}</p>
+            <p>{post.likes_count}</p>
           </div>
           <div className={commentsSharesCount}>
             <p>{post.comments_count} comments</p>
@@ -148,26 +116,7 @@ const Post = ({ post }) => {
           </div>
         </div>
         <div className={postActions}>
-         {showReactions && (
-            <div
-              className={reactsBar}
-              onMouseEnter={() => setShowReactions(true)}
-              onMouseLeave={hideReactionsbar}
-            >
-              <ReactionBarSelector onSelect={handleReactionClick} />
-            </div>
-          )}
-          <span
-            onClick={setLike}
-            onMouseEnter={showReactionsbar}
-            onMouseLeave={hideReactionsbar}
-          >
-            {/* <i className={isLiked ? activeLikeBtn : likeBtn}> </i> */}
-            <i className={isLiked ? reactions[selectedReaction] : likeBtn}> </i>
-            <p>{selectedReaction ? selectedReaction : "Like"}</p>{" "}
-            {/* عرض الإيموجي المختار */}
-          </span>
-          
+          <ReactsBar postId = {post.id}/>
           <span>
             <i className={commentBtn}> </i>
             <p>Comment</p>

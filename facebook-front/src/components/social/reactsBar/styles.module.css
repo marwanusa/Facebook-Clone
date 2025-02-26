@@ -1,0 +1,29 @@
+.reactsBar{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+}
+
+ .likeBtn{
+    background-position: 0  -798px;;
+        background-image: url(https://static.xx.fbcdn.net/rsrc.php/v4/y4/r/xAljGE-8t8Y.png);
+    background-size: auto;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    color: #B8BBBF;
+    display: flex;
+    justify-content: center;
+}
+
+.activeLikeBtn{
+    background-position: 0 -735px;
+    filter:none !important ;
+    
+}
+.yellowReact{
+    color:rgb(247, 177, 37) ;
+}
+.redReact{
+    color:rgb(247, 37, 37) ;
+}
