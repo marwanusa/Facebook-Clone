@@ -78,7 +78,6 @@ const Sidebar = () => {
             <h6>See More</h6>
           </div>
         )}
-
         <Collapse in={openDownBar}>
           <div id="example-collapse-text">
           <Group title="Group6" imgPosition="0 -37px" />

@@ -136,6 +136,10 @@
 }
 .PostStats .commentsSharesCount p{
     color: #B8BBBF;
+    cursor: pointer;
+}
+.PostStats .commentsSharesCount p:hover{
+    text-decoration: underline;
 }
 
 .postActions{
@@ -143,6 +147,12 @@
     gap: 5px;
     justify-content: center;
     margin-bottom: 6px;
+    position: relative;
+}
+.postActions .reactsBar{
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
 }
 .postActions span{
     display: flex;
