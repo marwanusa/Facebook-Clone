@@ -19,7 +19,7 @@ const ReactsBar = ({ postId }) => {
   const [selectedReaction, setSelectedReaction] = useState("satisfaction");
 
   const { reactsBar, likeBtn, activeLikeBtn, yellowReact, redReact } = styles;
-
+  
   const handleLike = () => {
     dispatch(actToggleLike({ postId, isLiked }));
     setIsLiked(!isLiked);
@@ -66,6 +66,8 @@ const ReactsBar = ({ postId }) => {
     angry: redReact,
     love: redReact,
   };
+
+
 
   return (
     <>
