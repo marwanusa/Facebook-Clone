@@ -4,7 +4,7 @@ import { useEffect, useRef } from "react";
 import Post from "../../social/Post/Post";
 import SharePost from "../../social/SharePost/SharePost";
 import { actGetPosts } from "../../../store/posts/postsSlice";
-import PostSkeleton from "../../feedback/skeletons/postSkeleton";
+import PostSkeleton from "../../feedback/PostSkeleton";
 
 const TimelineView = () => {
   const { container } = styles;

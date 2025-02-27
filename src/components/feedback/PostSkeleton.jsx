@@ -1,5 +1,4 @@
-import ContentLoader from "react-content-loader"
-
+import ContentLoader from "react-content-loader";
 const PostSkeleton = (props) => (
   <ContentLoader 
     speed={2}
@@ -24,5 +23,5 @@ const PostSkeleton = (props) => (
 );
 
 
-export default PostSkeleton
+export default PostSkeleton;
 
