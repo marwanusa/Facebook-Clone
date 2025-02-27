@@ -6,13 +6,13 @@ import GamingIcon from "../../../assets/Gaming_Icon.svg?react";
 import MenuIcon from "../../../assets/Menu_Icon.svg?react";
 import MessengerIcon from "../../../assets/Messenger_Icon.svg?react";
 import NotificationIcon from "../../../assets/Notification_Icon.svg?react";
-import SearchBar from "../searchBar/SearchBar";
 import styles from "./styles.module.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, useLocation } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
+import SearchBar from "../../social/SearchBar/SearchBar";
 
 const Header = () => {
   const { customNavbar, facebookLogo, NavIcon, active } = styles;
