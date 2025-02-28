@@ -3,6 +3,8 @@
 ## 📌 Overview
 This is a **Facebook Home Page Clone** built using **React + Vite + JavaScript**. The project simulates the core functionalities of Facebook's home page, including interactive posts, lazy loading via scrolling, and API interactions using **JSON Server**.
 
+![Desktop2025 02 28-15 42 45 01-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/9d983ea4-6b4f-4da9-a8aa-70e3114d5fda)
+
 ## 🚀 Features
 - 🔹 **Interactive React Bar** (Reactions, likes, comments, etc.)
 - 🔹 **Lazy Loading (Load by Scroll)** for optimized performance
