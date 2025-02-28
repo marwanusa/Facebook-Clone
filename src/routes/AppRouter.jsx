@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout/MainLayout";
-import { Videos, Games, Market } from "../pages/inedx"; // تأكد أن الملف اسمه index.jsx أو index.js
+import { Videos, Games, Market } from "../pages/inedx"; 
 import HomeLayout from "../layouts/HomeLayout/HomeLayout";
 
 const router = createBrowserRouter([

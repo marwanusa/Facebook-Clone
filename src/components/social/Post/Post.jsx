@@ -143,7 +143,7 @@ const Post = ({ post ,likeStatus}) => {
           </div>
         </div>
       ) : (
-        <HiddenPost onUndo={undoHide} />
+        <HiddenPost name={post.user.name} onUndo={undoHide} />
       )}
 
       {state.tooltip.visible && (

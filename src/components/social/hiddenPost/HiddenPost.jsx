@@ -1,7 +1,7 @@
 import styles from "./styles.module.css";
 
 // eslint-disable-next-line react/prop-types
-const HiddenPost = ({ onUndo }) => {
+const HiddenPost = ({ onUndo,name }) => {
   const { container, undoButton, firstBox, hiddenInfo, secondBox, thirdBox, fourthBox } = styles;
 
   return (
@@ -19,7 +19,7 @@ const HiddenPost = ({ onUndo }) => {
       <div className={secondBox}>
         <img alt="" src="https://static.xx.fbcdn.net/rsrc.php/v4/yE/r/mp_faH0qhrY.png" />
         <article>
-          <h6>Snooze mohamed for 30 days</h6>
+          <h6>{`Snooze ${name} for 30 days`}</h6>
           <p>Temporarily stop seeing posts.</p>
         </article>
       </div>
