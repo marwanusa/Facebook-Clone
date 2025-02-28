@@ -63,7 +63,7 @@ The app should now be running at **http://localhost:5173/** 🚀
 
 
 ## 🌍 Live Demo
-🔗 [Check out the live version here!](https://fbreplica-xyt.netlify.app/)
+🔗 [Check out the live version here!](https://fbreplica-xyx.netlify.app/)
 
 ## 🤝 Contributing
 Feel free to **fork** this repository and submit pull requests if you want to improve or add new features! 🎉
