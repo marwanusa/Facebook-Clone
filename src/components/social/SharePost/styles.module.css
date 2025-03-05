@@ -76,3 +76,17 @@
     width: 25px;
     height: 25px;
 }
+
+@media (max-width: 750px){
+    .expression{
+        flex-basis: 25% !important;
+
+    }
+    .expressionImage{
+        width: 20px;
+        height: 20px;
+    }
+    .expression span{
+        font-size: 13px;
+    }
+    }

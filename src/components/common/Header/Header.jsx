@@ -15,20 +15,20 @@ import { Dropdown } from "react-bootstrap";
 import SearchBar from "../../social/SearchBar/SearchBar";
 
 const Header = () => {
-  const { customNavbar, facebookLogo, NavIcon, active } = styles;
+  const { customNavbar, facebookLogo, NavIcon, active ,navbar_navigations} = styles;
   let location = useLocation();
 
   return (
     <>
-      <Navbar data-bs-theme="dark" expand="lg" className={customNavbar}>
+      <Navbar data-bs-theme="dark"  className={customNavbar}>
         <Container fluid>
           <Navbar.Brand href="/" className={facebookLogo}>
             <Logo width="40" height="40" />
           </Navbar.Brand>
           <SearchBar />
           <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav" className="justify-content-center ">
-            <Nav>
+          <Navbar.Collapse id="navbar-nav" className="justify-content-center">
+            <Nav className={navbar_navigations}>
               <Nav.Link className={NavIcon} as={NavLink} to="/">
                 <HomeIcon width="22" height="22.5" className={location.pathname === "/" ? active : ""} />
               </Nav.Link>

@@ -49,3 +49,13 @@
   background: #3a3b3c;
   color: #1877f2;
 }
+@media (max-width: 950px){
+.navbar_navigations{
+  width: 300px;
+}
+}
+@media (max-width: 750px){
+  .navbar_navigations{
+    display: none !important;
+  }
+  }

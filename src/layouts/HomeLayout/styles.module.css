@@ -28,3 +28,29 @@
     bottom: 0;
     width: 25%; 
 }
+
+@media (max-width: 1000px) {
+    .sidebar{
+        display: none;
+    }
+    .rigthSidebar{
+        width: 33%;
+    }
+
+    .feed {
+        flex-basis: 60%;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 750px){
+    .feed {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .rigthSidebar{
+        display: none;
+    }
+    
+}
