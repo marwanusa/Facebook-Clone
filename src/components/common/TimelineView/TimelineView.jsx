@@ -25,7 +25,7 @@ const TimelineView = () => {
           dispatch(actGetPosts(page)); 
         }
       },
-      { threshold: 1.0 }
+      { threshold: 0.5 }
     );
 
     if (loaderRef.current) {
